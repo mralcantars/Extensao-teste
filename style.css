@@ -1,0 +1,95 @@
+* {
+    margin: 0px; /*espaço externo*/
+    padding: 0px;/*espaço interno*/
+    box-sizing: border-box; /* Garante que bordas não quebrem o tamanho dos elementos */
+}
+
+body {
+    background-color: #d6e2ff; /* Cor de fundo  */
+    color: #333;               /* Cor do texto  */
+    font-family:'Times New Roman', Times, serif;   /* Fonte */
+}
+
+.links{/*Novo - 21/02*/
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-direction:row;
+    margin-top: 14px;
+    gap: 15px;
+}
+
+.links a { /*Novo - 21/02*/
+    background-color: #c8d7f9;
+    color: #0f549e;
+    padding: 10px 29px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight:800;
+    font-size: 19px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover { /*Novo - 21/02*/
+    color: #01101f; /* Mude para a cor desejada */
+    text-decoration: underline; /*adiciona sublinhado ao passar o mouse */
+}
+
+a:active { /*Novo - 21/02*/
+    background-color:#0f549e ;
+    color: #c8d7f9;
+}
+
+h1 {
+    color: #0f549e;
+    font-size: 56px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900; /*Negrito*/
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 35px; /*espaço da borda esquerda*/
+}
+
+h3 {
+    color: #043062;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;     /* Deixa o subtítulo mais fininho para contraste */
+    max-width: 500px;     /* Limita a largura para o texto quebrar linha */
+    text-align:center;
+    margin-left: 35px; /*espaço da borda esquerda*/
+}
+
+h4{
+    color: #000000;
+    font-size:20x;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 390;     /* Deixa o subtítulo mais fininho para contraste */
+    max-width: 506px;     /* Limita a largura para o texto quebrar linha */
+    text-align:center;
+    margin-left: 35px; /*espaço da borda esquerda*/
+}
+
+.container{ /*Titulo e subtitulo*/
+  display:flex;
+  flex-direction: column;/*Empilha o titulo e o subtitulo*/
+  justify-content: center;/*Centraliza verticalmente*/
+  align-items: flex-start; /*Alinha tudo na esquerda*/
+  position: relative; /*posiciona o elemento em relação a si mesmo*/
+  height: 100vh; /*Altura do container*/
+  padding-left: 3px;/*Recuo da borda*/
+}
+
+.imagem-direita { /*Imagem*/
+    position: absolute; 
+    right: 0; /*elemento totalmente no lado direito.*/
+    bottom: 0; /*Encosta o elemento na parte inferior*/
+    width: 1020px;   /* aumenta aqui */
+    height: auto;   /* mantém proporção */
+
+}
