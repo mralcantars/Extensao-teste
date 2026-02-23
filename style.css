@@ -19,8 +19,8 @@ body {
 }
 
 .links a { /*Novo - 21/02*/
-    background-color: #c8d7f9;
-    color: #0f549e;
+    background-color: #0f549e;
+    color: #c8d7f9;
     padding: 10px 29px;
     border-radius: 3px;
     text-decoration: none;
@@ -36,13 +36,13 @@ body {
 }
 
 a:hover { /*Novo - 21/02*/
-    color: #01101f; /* Mude para a cor desejada */
+    color: #d6e2ff; /* Mude para a cor desejada */
     text-decoration: underline; /*adiciona sublinhado ao passar o mouse */
 }
 
 a:active { /*Novo - 21/02*/
-    background-color:#0f549e ;
-    color: #c8d7f9;
+    background-color:#c8d7f9 ;
+    color: #0f549e;
 }
 
 h1 {
@@ -92,4 +92,93 @@ h4{
     width: 1020px;   /* aumenta aqui */
     height: auto;   /* mantém proporção */
 
+}
+
+/*-----SEGURANÇA DIGITAL-----*/ /*Novo 23/02*/
+
+.seguranca{
+    color: #0f549e;
+    font-size: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900; /*Negrito*/
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 65px; /*espaço da borda esquerda*/
+
+    margin-top: 40px;
+}
+
+.text1{
+    color: #000000;
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 390;     /* Deixa o subtítulo mais fininho para contraste */
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 45px; /*espaço da borda esquerda*/
+
+    text-indent: 2em; /*Espaço do paragrafo*/
+    
+}
+
+.Oqeseg{
+    position: absolute; 
+    top: 90px; 
+    right: 0; /*elemento totalmente no lado direito.*/
+    margin-top: 0; /*Encosta o elemento na parte inferior*/
+    width: 750px;   /* aumenta aqui */
+    height: auto;   /* mantém proporção */
+}
+
+.degrade1{
+    background: linear-gradient(135deg,#d6e2ff, #60a5fa);
+}
+
+.cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50 px;
+}
+
+.card{
+    width: 450px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+summary{
+    font-size: 30px;
+    font-weight: bold;
+    color:#1e4f91;
+    cursor: pointer;
+    list-style: none;
+}
+
+.card p {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.text2{
+    color: #000000;
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 390;     /* Deixa o subtítulo mais fininho para contraste */
+
+    text-indent: 2em; /*Espaço do paragrafo*/
+}
+
+.icone{
+    width: 50px;
+    height: auto;
+    margin-top: 5px;
+}
+summary span {
+    line-height: 1.2;
+    font-size: 26px;
+    font-weight: bold;
+    color: #1e4f91;
 }
