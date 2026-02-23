@@ -138,7 +138,7 @@ h4{
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-top: 50 px;
+    margin-top: 50px;
 }
 
 .card{
@@ -176,9 +176,18 @@ summary{
     height: auto;
     margin-top: 5px;
 }
-summary span {
-    line-height: 1.2;
-    font-size: 26px;
-    font-weight: bold;
-    color: #1e4f91;
+
+.titulo-card {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 12px;           /* Espaço entre ícone e texto */
+  font-size: 2rem;     /* Ajuste conforme desejar */
+  font-weight: bold;
+  color: #1e4f91;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.titulo-card .icone {
+  width: 48px;   /* Ajuste o tamanho do ícone */
+  height: auto;
 }
