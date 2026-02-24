@@ -191,3 +191,47 @@ h4{
   width: 48px;   /* Ajuste o tamanho do ícone */
   height: auto;
 }
+
+.logo-home {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.logo-home:hover {
+    opacity: 0.8;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+}
+.topo-logo {
+    padding: 15px 20px 5px 20px;
+}
+
+.topo-logo a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;      /* bem grossa */
+    font-size: 22px;
+    color: #0b2e59;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.topo-logo a:hover {
+    opacity: 0.8;
+}
+
+.logo-icon {
+    width: 26px;
+    height: 26px;
+}
