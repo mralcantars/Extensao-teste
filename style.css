@@ -134,43 +134,43 @@ h4{
     background: linear-gradient(135deg,#d6e2ff, #60a5fa);
 }
 
-.cards{
+.cards {
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
-.card{
-    width: 450px;
-    padding: 20px;
-    background: white;
+.card {
+    width: 300px;
+    background-color: #eaeaea;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-summary{
-    font-size: 30px;
-    font-weight: bold;
-    color:#1e4f91;
+    padding: 15px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.card summary {
+    font-weight: bold;
+    font-size: 18px;
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.card p {
+.card summary::-webkit-details-marker {
+    display: none;
+}
+
+.card[open] {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.text2 {
     margin-top: 15px;
-    line-height: 1.5;
 }
-
-.text2{
-    color: #000000;
-    font-size:20px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 390;     /* Deixa o subtítulo mais fininho para contraste */
-
-    text-indent: 2em; /*Espaço do paragrafo*/
-}
-
 .icone{
     width: 50px;
     height: auto;
