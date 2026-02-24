@@ -1,0 +1,39 @@
+/*Segurança digital*/
+
+.degrade1{
+    background: linear-gradient(135deg,#d6e2ff, #60a5fa);
+}
+
+.seguranca{ /*Titulo*/
+    color: #0f549e;
+    font-size: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900; /*Negrito*/
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 65px; /*espaço da borda esquerda*/
+
+    margin-top: 40px;
+}
+
+.text1{/*Conteudo abaixo do titulo*/
+    color: #000000;
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 390;     /* Deixa o subtítulo mais fininho para contraste */
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 45px; /*espaço da borda esquerda*/
+
+    text-indent: 2em; /*Espaço do paragrafo*/   
+}
+
+.Oqeseg{ /*Imagem*/
+    position: absolute; 
+    top: 150px; 
+    right: 0; /*elemento totalmente no lado direito.*/
+    margin-top: 0; /*Encosta o elemento na parte inferior*/
+    width: 750px;   /* aumenta aqui */
+    height: auto;   /* mantém proporção */
+}
+

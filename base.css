@@ -1,0 +1,71 @@
+/*Bae de todas as paginas, Cor de fundo, link e as fontes*/
+* {
+    margin: 0px; /*espaço externo*/
+    padding: 0px;/*espaço interno*/
+    box-sizing: border-box; /* Garante que bordas não quebrem o tamanho dos elementos */
+}
+
+body {
+    background-color: #d6e2ff; /* Cor de fundo  */
+    color: #333;               /* Cor do texto  */
+    font-family:'Times New Roman', Times, serif;   /* Fonte */
+}
+
+.links{/*Novo - 21/02*/
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-direction:row;
+    margin-top: 14px;
+    gap: 15px;
+}
+
+.links a { /*Novo - 21/02*/
+    background-color: #0f549e;
+    color: #c8d7f9;
+    padding: 10px 29px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight:800;
+    font-size: 19px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover { /*Novo - 21/02*/
+    color: #d6e2ff; /* Mude para a cor desejada */
+    text-decoration: underline; /*adiciona sublinhado ao passar o mouse */
+}
+
+a:active { /*Novo - 21/02*/
+    background-color:#c8d7f9 ;
+    color: #0f549e;
+}
+
+/*Voltar p pagina inicial*/
+.topo-logo {
+    padding: 15px 20px 5px 20px;
+}
+
+.topo-logo a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;      /* bem grossa */
+    font-size: 22px;
+    color: #0b2e59;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.topo-logo a:hover {
+    opacity: 0.8;
+}
+
+.logo-icon {
+    width: 40px;
+    height: auto;
+}

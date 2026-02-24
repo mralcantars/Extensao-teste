@@ -1,0 +1,111 @@
+/*Elementos da pagina inicial*/
+
+h1 {
+    color: #0f549e;
+    font-size: 56px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900; /*Negrito*/
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 35px; /*espaço da borda esquerda*/
+}
+
+h3 {
+    color: #043062;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;     /* Deixa o subtítulo mais fininho para contraste */
+    max-width: 500px;     /* Limita a largura para o texto quebrar linha */
+    text-align:center;
+    margin-left: 35px; /*espaço da borda esquerda*/
+}
+
+h4{
+    color: #000000;
+    font-size:20x;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 390;     /* Deixa o subtítulo mais fininho para contraste */
+    max-width: 506px;     /* Limita a largura para o texto quebrar linha */
+    text-align:center;
+    margin-left: 35px; /*espaço da borda esquerda*/
+}
+
+.container{ /*Titulo e subtitulo*/
+  display:flex;
+  flex-direction: column;/*Empilha o titulo e o subtitulo*/
+  justify-content: center;/*Centraliza verticalmente*/
+  align-items: flex-start; /*Alinha tudo na esquerda*/
+  position: relative; /*posiciona o elemento em relação a si mesmo*/
+  height: 100vh; /*Altura do container*/
+  padding-left: 3px;/*Recuo da borda*/
+}
+
+.imagem-direita { /*Imagem*/
+    position: absolute; 
+    right: 0; /*elemento totalmente no lado direito.*/
+    bottom: 0; /*Encosta o elemento na parte inferior*/
+    width: 1020px;   /* aumenta aqui */
+    height: auto;   /* mantém proporção */
+
+}
+
+/*Botao de saiba mais*/
+.btn-scroll {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 40px;
+    background-color: #1f4e8c;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 160px;
+    border-radius: 8px;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.btn-scroll:hover {
+    background-color: #163d6b;
+    transform: scale(1.05);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Texto da introduçaõ*/
+.introducao{
+    max-width: 900px;          /* limita largura */
+    margin: 80px auto;         /* centraliza */
+    padding: 40px;             /* espaço interno */
+    background-color: #f8fbff;   
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);}
+
+.introducao h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #1f4e8c;
+    position: relative;
+}
+
+.introducao h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #1f4e8c;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.introducao p {
+    font-size: 20px;
+    line-height: 1.9;          /* espaçamento entre linhas */
+    text-align: justify;
+    text-indent: 30px;         /* recuo no início */
+    color: #333;
+    margin-bottom: 20px;
+
+}
