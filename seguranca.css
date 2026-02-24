@@ -37,3 +37,61 @@
     height: auto;   /* mantém proporção */
 }
 
+.card1 {
+    background-color: #e1edfd;
+    width: 420px;
+    margin: 80px auto; /*Centraliza na tela*/
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    float: left;
+    margin-left: 410px;
+    bottom: 25px;
+}
+
+.card2{
+    background-color: #e1edfd;
+    width: 420px;
+    margin: 80px auto; /*Centraliza na tela*/
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    float:right;
+    margin-right: 410px;
+}
+
+details summary {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    color:#1f4e8c;
+    cursor: none;
+    list-style: none;
+
+    display: flex;              /* deixa lado a lado */
+    align-items: center;        /* alinha verticalmente */
+    gap: 10px;                  /* espaço entre imagem e texto */
+}
+
+.icone1 {
+    width: 55px;   /* tamanho da imagem */
+    height: auto;
+}
+.icone2 {
+    width: 48px;   /* tamanho da imagem */
+    height: auto;
+}
+
+details p {
+    font-size: 20px;
+    line-height: 1.5;          /* espaçamento entre linhas */
+    text-align: justify;
+    text-indent: 30px;         /* recuo no início */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Remove a setinha padrão */
+summary::-webkit-details-marker {
+    display: none;
+}
