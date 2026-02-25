@@ -38,26 +38,26 @@
 }
 
 .card1 {
-    background-color: #e1edfd;
+    background-color: #faf8db;
     width: 420px;
     margin: 80px auto; /*Centraliza na tela*/
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
     float: left;
-    margin-left: 410px;
+    margin-left: 300px;
     bottom: 25px;
 }
 
 .card2{
-    background-color: #e1edfd;
+    background-color: #faf8db;
     width: 420px;
     margin: 80px auto; /*Centraliza na tela*/
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
     float:right;
-    margin-right: 410px;
+    margin-right: 300px;
 }
 
 details summary {
@@ -77,6 +77,7 @@ details summary {
     width: 55px;   /* tamanho da imagem */
     height: auto;
 }
+
 .icone2 {
     width: 48px;   /* tamanho da imagem */
     height: auto;

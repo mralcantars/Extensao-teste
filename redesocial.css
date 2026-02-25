@@ -1,0 +1,127 @@
+/*O que não postar em redes sociais*/
+.titulo{
+    display:flex;
+    flex-direction: column;/*Empilha o titulo e o subtitulo*/
+    align-items:center; /*Alinha tudo na esquerda*/
+    position: relative; /*posiciona o elemento em relação a si mesmo*/
+    height: 100vh; /*Altura do container*/
+    padding-right: 40px;/*Recuo da borda*/
+    margin-top: 65px;
+    margin-bottom: 10px; /* espaço pequeno antes da linha */
+
+}
+
+.escrita1{
+    color: #0f549e;
+    font-size: 56px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900; /*Negrito*/
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-right: 35px; /*espaço da borda direita*/
+}
+
+.escrita2{
+    color: #043062;
+    font-size: 36px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;     /* Deixa o subtítulo mais fininho para contraste */
+    max-width: 500px;     /* Limita a largura para o texto quebrar linha */
+    text-align:center;
+    margin-right: 35px; /*espaço da borda direita*/
+}
+
+.linha-titulo {
+    border: none;
+    height: 5px;
+    width: 300px; /* tamanho da linha */
+    margin: 0 auto 40px auto; /* centraliza */
+    background: linear-gradient(to right, #0d47a1, #92ceff, #0d47a1);
+    border-radius: 25px;
+}
+
+.conteudo{
+    max-width: 820px;          /* limita largura */
+    margin: 80px auto;         /* centraliza */
+    padding: 35px;             /* espaço interno */
+    background-color: #faf8db;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    position:relative;
+    margin-top: -650px;
+}
+
+.conteudo p{
+    font-size: 20px;
+    line-height: 1.9;         /* espaçamento entre linhas */
+    text-align: justify;
+    text-indent: 30px;         /* recuo no início */
+    color: #333;
+}
+
+/*cards*/
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    margin-top: -70px;
+    overflow: visible;
+
+}
+
+.card {
+    background:#e3f2fd;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+
+    display: flex;          /* Coloca imagem e texto lado a lado */
+    align-items: center;    /* Centraliza verticalmente */
+    gap: 20px;              /* Espaço entre a imagem e o texto */
+    position: relative;
+
+}
+
+.card h3 {
+    color: #1f4e8c;
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card p {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align:justify;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+
+}
+
+.img {
+    right: 0;
+    bottom: 40px;
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+
+    flex-shrink: 0; 
+
+}
+
+.texto-coluna {
+    display: flex;
+    flex-direction: column; /* Faz o título ficar em cima do texto */
+    justify-content: center;
+}
