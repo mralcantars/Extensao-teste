@@ -1,0 +1,238 @@
+* {
+    margin: 0px; /*espaço externo*/
+    padding: 0px;/*espaço interno*/
+    box-sizing: border-box; /* Garante que bordas não quebrem o tamanho dos elementos */
+}
+
+body {
+    background-color: #d6e2ff; /* Cor de fundo  */
+    color: #333;               /* Cor do texto  */
+    font-family:'Times New Roman', Times, serif;   /* Fonte */
+}
+
+.links{/*Novo - 21/02*/
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-direction:row;
+    margin-top: 14px;
+    gap: 15px;
+}
+
+.links a { /*Novo - 21/02*/
+    background-color: #0f549e;
+    color: #c8d7f9;
+    padding: 10px 29px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight:800;
+    font-size: 19px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover { /*Novo - 21/02*/
+    color: #d6e2ff; /* Mude para a cor desejada */
+    text-decoration: underline; /*adiciona sublinhado ao passar o mouse */
+}
+
+a:active { /*Novo - 21/02*/
+    background-color:#c8d7f9 ;
+    color: #0f549e;
+}
+
+h1 {
+    color: #0f549e;
+    font-size: 56px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900; /*Negrito*/
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 35px; /*espaço da borda esquerda*/
+}
+
+h3 {
+    color: #043062;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;     /* Deixa o subtítulo mais fininho para contraste */
+    max-width: 500px;     /* Limita a largura para o texto quebrar linha */
+    text-align:center;
+    margin-left: 35px; /*espaço da borda esquerda*/
+}
+
+h4{
+    color: #000000;
+    font-size:20x;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 390;     /* Deixa o subtítulo mais fininho para contraste */
+    max-width: 506px;     /* Limita a largura para o texto quebrar linha */
+    text-align:center;
+    margin-left: 35px; /*espaço da borda esquerda*/
+}
+
+.container{ /*Titulo e subtitulo*/
+  display:flex;
+  flex-direction: column;/*Empilha o titulo e o subtitulo*/
+  justify-content: center;/*Centraliza verticalmente*/
+  align-items: flex-start; /*Alinha tudo na esquerda*/
+  position: relative; /*posiciona o elemento em relação a si mesmo*/
+  height: 100vh; /*Altura do container*/
+  padding-left: 3px;/*Recuo da borda*/
+}
+
+.imagem-direita { /*Imagem*/
+    position: absolute; 
+    right: 0; /*elemento totalmente no lado direito.*/
+    bottom: 0; /*Encosta o elemento na parte inferior*/
+    width: 1020px;   /* aumenta aqui */
+    height: auto;   /* mantém proporção */
+
+}
+
+/*-----SEGURANÇA DIGITAL-----*/ /*Novo 23/02*/
+
+.seguranca{
+    color: #0f549e;
+    font-size: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900; /*Negrito*/
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 65px; /*espaço da borda esquerda*/
+
+    margin-top: 40px;
+}
+
+.text1{
+    color: #000000;
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 390;     /* Deixa o subtítulo mais fininho para contraste */
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 45px; /*espaço da borda esquerda*/
+
+    text-indent: 2em; /*Espaço do paragrafo*/
+    
+}
+
+.Oqeseg{
+    position: absolute; 
+    top: 90px; 
+    right: 0; /*elemento totalmente no lado direito.*/
+    margin-top: 0; /*Encosta o elemento na parte inferior*/
+    width: 750px;   /* aumenta aqui */
+    height: auto;   /* mantém proporção */
+}
+
+.degrade1{
+    background: linear-gradient(135deg,#d6e2ff, #60a5fa);
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    width: 300px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card summary {
+    font-weight: bold;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card summary::-webkit-details-marker {
+    display: none;
+}
+
+.card[open] {
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.text2 {
+    margin-top: 15px;
+}
+.icone{
+    width: 50px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.titulo-card {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 12px;           /* Espaço entre ícone e texto */
+  font-size: 2rem;     /* Ajuste conforme desejar */
+  font-weight: bold;
+  color: #1e4f91;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.titulo-card .icone {
+  width: 48px;   /* Ajuste o tamanho do ícone */
+  height: auto;
+}
+
+.logo-home {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.logo-home:hover {
+    opacity: 0.8;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+}
+/*23/02/2026*/
+.topo-logo {
+    padding: 15px 20px 5px 20px;
+}
+
+.topo-logo a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;      /* bem grossa */
+    font-size: 22px;
+    color: #0b2e59;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.topo-logo a:hover {
+    opacity: 0.8;
+}
+
+.logo-icon {
+    width: 26px;
+    height: 26px;
+}

@@ -22,7 +22,7 @@ h3 {
 
 h4{
     color: #000000;
-    font-size:20x;
+    font-size: 20x;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 390;     /* Deixa o subtítulo mais fininho para contraste */
     max-width: 506px;     /* Limita a largura para o texto quebrar linha */
@@ -46,6 +46,7 @@ h4{
     bottom: 0; /*Encosta o elemento na parte inferior*/
     width: 1020px;   /* aumenta aqui */
     height: auto;   /* mantém proporção */
+    pointer-events: none; /*deixa a imagem atrás*/
 
 }
 
