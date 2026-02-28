@@ -1,0 +1,129 @@
+.senha{ /*Titulo*/
+    color: #c8d7f9;
+    font-size: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900; /*Negrito*/
+    text-align:start;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 45px; /*espaço da borda esquerda*/
+    margin-top: 60px;
+}
+ 
+.Text1{ /*Conteudo abaixo do titulo*/
+    color: #333;
+    font-size:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 390;     /* Deixa o subtítulo mais fininho para contraste */
+    text-align:justify;
+    margin-bottom: 15px; /* Espaço para o texto de baixo não grudar */
+    margin-left: 45px; /*espaço da borda esquerda*/
+
+    text-indent: 2em; /*Espaço do paragrafo*/
+}
+
+.degrade3 {/*degrade*/
+    background: linear-gradient(to bottom, #0f549e, #d6e2ff);
+}
+
+.links2{/*Novo - 21/02*/
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-direction:row;
+    margin-top: 14px;
+    gap: 15px;
+    background-color: #0f549e;
+}
+
+.links2 a { /*Novo - 21/02*/
+    background-color: #0f549e;
+    color: #c8d7f9;
+    padding: 10px 29px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight:800;
+    font-size: 19px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover { /*Novo - 21/02*/
+    color: #d6e2ff; /* Mude para a cor desejada */
+    text-decoration: underline; /*adiciona sublinhado ao passar o mouse */
+}
+
+a:active { /*Novo - 21/02*/
+    background-color:#c8d7f9 ;
+    color: #0f549e;
+}
+
+.senhaseg{ /*Imagem*/
+    position: absolute; 
+    top: 150px; 
+    right: 0; /*elemento totalmente no lado direito.*/
+    margin-top: 0; /*Encosta o elemento na parte inferior*/
+    width: 650px;   /* aumenta aqui */
+    height: auto;   /* mantém proporção */
+}
+
+/* Container em grade */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    margin: 150px auto 40px auto; /* espaço em cima vai aqui */
+    align-items: stretch; /* força mesma altura */
+}
+
+.card {
+    background: #f4f6fb;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%; /* força ocupar mesma altura */
+}
+
+/* Garante que todos na mesma linha fiquem iguais */
+.container > .card {
+    display: flex;
+}
+
+/* Título */
+.card h2 {
+    font-size: 25px;
+    text-align: center;
+    color: #2b4ea2;
+    margin-bottom: 10px;
+}
+
+/* Texto principal */
+.card p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Destaque "Como identificar" */
+.card strong {
+    color: #000;
+}
+
+/* Caixa de exemplo */
+.exemplo {
+    background-color: #fff3c4;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 12px 0;
+}
+

@@ -1,0 +1,99 @@
+/* TÍTULO PRINCIPAL */
+.titulo-golpes {
+    text-align: center;        /* Centraliza o texto */
+    font-size: 42px;           /* Define tamanho grande do título */
+    color: #0f549e;
+    margin: 60px 0 10px 0;     /* Espaço acima (60px) e abaixo (10px) */
+    font-weight: 900;          /* Deixa o texto em negrito */
+}
+
+
+/*  SUBTÍTULO */
+.subtitulo-golpes {
+    text-align: center;        
+    font-size: 20px;           
+    font-weight: 600;          
+    color: #0f549e;            
+    background: rgba(255,255,255,0.6); /* Fundo branco transparente */
+    padding: 12px 25px;        /* Espaço interno (vertical e horizontal) */
+    border-radius: 30px;       /* Deixa formato arredondado (pílula) */
+    display: inline-block;
+    margin: 15px auto 60px auto;
+}
+
+
+/* CONTAINER CARDS */
+.cards-golpes {
+    display: grid;              /* Usa sistema de grade */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria colunas automáticas com mínimo 300px */
+    gap: 30px;                  /* Espaço entre os cards */
+    max-width: 1200px;          /* Limita largura máxima */
+    margin: 0 auto 80px auto;
+    padding: 20px;
+}
+
+
+/* CARD INDIVIDUAL FUNDO*/
+.card-golpe {
+    background: linear-gradient(135deg, #f0f4ff, #b7c7fa, #cce1fc); /* Fundo com degradê azul */
+    padding: 35px;
+    border-radius: 40px;        /* Deixa formato bem arredondado */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);/* Sombra suave */
+    transition: 0.3s ease;      /* Animação suave */
+    max-width: 1100px;
+    margin: 30px auto;
+    border: 1px solid rgba(255,255,255,0.5); /* Borda branca transparente */
+    backdrop-filter: blur(6px);                /* Efeito vidro (blur no fundo) */
+}
+
+
+/* VARIAÇÕES DE COR */
+.azul1 {
+    background: linear-gradient(135deg, #e0ecff, #c7dbff); 
+}
+.azul2 {
+    background: linear-gradient(135deg, #e6fff3, #c8f7e4); 
+}
+
+.card-golpe strong {
+    font-size: 19px; 
+    color: #063568; 
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+.card-golpe:hover {
+    transform: translateY(-10px) scale(1.03);   /* Faz o card subir e aumentar levemente */
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15); /* Sombra mais forte no hover */
+}
+
+.card-golpe h3 {
+    color: #1f4e8c;  
+    margin-bottom: 15px; 
+    font-size: 28px; 
+}
+
+.card-golpe p {
+    font-size: 19px;
+    line-height: 1.7;      /* Espaçamento entre linhas */
+}
+
+/* ALERTA FINAL  */
+.alerta-final {
+    text-align: center;
+    background: #ffe9b3; /* Fundo amarelo claro */
+    padding: 25px; 
+    border-radius: 12px;   /* Cantos arredondados */
+    max-width: 800px; 
+    margin: 0 auto 80px auto;
+    font-weight: bold;     /* Negrito */
+    white-space: nowrap;   /* Impede quebra de linha */
+}
+
+
+/* FUNDO DA ÁREA */
+.fundo-golpes {
+    background: linear-gradient(135deg, #d6e2ff, #c3d4ff);
+    min-height: 100vh;  /* Altura mínima igual à tela */
+    padding-bottom: 80px;   /* Espaço inferior */
+}
