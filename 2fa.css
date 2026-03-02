@@ -51,7 +51,7 @@
 /* CONTAINER DOS CARDS */
 .cards-2fa {
     display: grid;
-    grid-template-columns: repeat(2, 320px);
+    grid-template-columns: repeat(2, 380px);
     gap: 40px;
     margin: 40px 0 40px 5%;
 }
@@ -80,6 +80,8 @@
     font-size: 22px;
     margin-bottom: 15px;
     color: #033061;
+    text-align: left;
+    margin-left: 0%;
 }
 
 .card-2fa p {
@@ -94,9 +96,17 @@
 }
 
 .imagem-2fa img {
-    width: 450px;
+    width: 650px;
     max-width: 100%;
+    margin-top: 40px;
 }
+
+.imagem-2fa {
+    position: absolute;
+    right: 2%;
+    top: 350px; /* ajuste fino se precisar */
+}
+
 /* ALERTA FINAL */
 .alerta-2fa {
     width: fit-content;
@@ -105,6 +115,7 @@
     border-radius: 12px;
     margin: 20px 0 40px 5%;
     font-weight: 500;
+    margin-left: 230px;
 }
 .topo-logo,
 .links {
