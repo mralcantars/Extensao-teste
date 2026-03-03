@@ -84,14 +84,14 @@
     margin: 60px auto;
 }
 
-/* Primeiros 3 */
+/* 3 cards */
 .card-wifi:nth-child(1),
 .card-wifi:nth-child(2),
 .card-wifi:nth-child(3) {
     grid-column: span 2;
 }
 
-/* Últimos 2 centralizados */
+/* 2 cards abaixo centralizados */
 .card-wifi:nth-child(4) {
     grid-column: 2 / span 2;
 }
