@@ -1,49 +1,74 @@
 .fundo-wifi {
     min-height: 100vh;
-    background: linear-gradient(135deg, #0f4c81, #cce6ff);
+    background: linear-gradient(135deg, #1e73be, #cce6ff);
 }
 
 /* Título */
 .titulo-wifi {
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 900;
-    background: #87c4ff;
-    padding: 20px 35px;
-    border-radius: 25px;
-    width: fit-content;
-    margin: 30px auto;
     text-align: center;
+    color: #0b4a82;
+    letter-spacing: -1px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.titulo-wifi::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 4px;
+    background: linear-gradient(135deg, #0f4c81, #cce6ff);
+    margin: 15px auto 0;
+    border-radius: 4px;
 }
 
 .subtitulo-wifi {
     text-align: center;
-    font-size: 22px;
-    margin-bottom: 50px;
+    font-size: 20px;
+    color: #011224;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    line-height: 2.0;
+    opacity: 1.5;
 }
 
 /* Cards */
 .cards-wifi {
     display: grid;
-    grid-template-columns: repeat(2, 320px);
-    gap: 40px;
-    margin-left: 5%;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    width: 85%;
+    margin: 60px auto;
 }
 
 .card-wifi {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    min-height: 300px;
-    transition: 0.3s;
-}
+    background: rgba(255, 255, 255, 0.85);
+    padding: 22px;
+    border-radius: 12px;
+    text-align: left;
 
+    border-left: 6px solid #1e6bd6;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+}
+.card-wifi img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 15px auto 0;
+}
 .card-wifi:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 .card-wifi h3 {
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0a2f5c;
 }
 
 .card-wifi strong {
@@ -53,8 +78,24 @@
 /* Alerta */
 .alerta-wifi {
     background: #f3d999;
-    padding: 15px 25px;
+    padding: 10px 20px;
     border-radius: 12px;
     width: fit-content;
-    margin: 40px 0 40px 5%;
+    margin: 60px auto;
+}
+
+/* Primeiros 3 */
+.card-wifi:nth-child(1),
+.card-wifi:nth-child(2),
+.card-wifi:nth-child(3) {
+    grid-column: span 2;
+}
+
+/* Últimos 2 centralizados */
+.card-wifi:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.card-wifi:nth-child(5) {
+    grid-column: 4 / span 2;
 }
